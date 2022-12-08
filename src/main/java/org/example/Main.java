@@ -8,7 +8,7 @@ import java.util.LinkedList;
 public class Main {
     /** Функция формирования списка из документа .csv*/
     public static void get_list_from_document(LinkedList<Person> list_of_persons) throws IOException {
-        BufferedReader csvReader = new BufferedReader(new FileReader("names.csv"));
+        BufferedReader csvReader = new BufferedReader(new FileReader("C:\\I\\java\\Laba4\\src\\main\\resources\\names.csv"));
         String nextLine;
         while ((nextLine = csvReader.readLine()) != null) {
             String[] s = nextLine.split(";");
